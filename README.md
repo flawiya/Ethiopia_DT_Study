@@ -1,23 +1,12 @@
 # AgriRisk-Africa 🌽☀️
 **Multi-Scalar Drought Reanalysis & Parametric Insurance Modeling**
 
-AgriRisk-Africa is a specialized geospatial pipeline designed to quantify agricultural drought risk across African districts. By merging satellite rainfall (CHIRPS), climate reanalysis (ERA5-Land), and crop calendars (GEOGLAM), the system calculates high-resolution drought indices used to design parametric insurance payouts.
+## 📖 Introduction
+Agriculture in Africa is over 90% rainfed, making it highly vulnerable to climate-driven shocks. This project provides a high-resolution drought monitoring pipeline that moves beyond simple rainfall tracking. By integrating **CHIRPS satellite rainfall**, **ERA5-Land reanalysis**, and **GEOGLAM crop calendars**, we calculate standardized indices to identify "Flash Droughts" and soil moisture deficits that lead to crop failure.
 
-## 🚀 Key Features
-*   **Multi-Scalar Indices**: Implementation of SPI (Precipitation), SPEI (Evapotranspiration), and SSI (Soil Moisture) using Gamma-CDF and Log-Logistic transformations.
-*   **Risk Window Analysis**: Automatically filters data based on crop-specific growing seasons (e.g., Kiremt rains in Ethiopia).
-*   **Insurance Modeling**: ROC Analysis to validate indices against historical disaster years (EM-DAT).
-*   **Interactive Visualizations**: Animated drought maps (Plotly) and multi-layer district stress maps (Folium).
-*   **Teleconnection Mapping**: District-to-district correlation matrices to understand synchronized drought risk.
-
-## 📁 Repository Structure
-*   `analysis/`: Main drought reanalysis scripts (Ethiopia & Africa-wide).
-*   `utils/`: Geospatial pre-processing (GADM clipping, coordinate alignment).
-*   `data/`: (Local only) Directory for GADM .gpkg, CHIRPS, and ERA5 CSVs.
-*   `outputs/`: Generated HTML maps, correlation matrices, and CSV results.
-
-## 🛠️ Installation
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/your-username/AgriRisk-Africa.git
-   cd AgriRisk-Africa
+## 🎯 Objectives
+The primary goal of this study is to reduce **Basis Risk** (the gap between index triggers and actual crop loss) in parametric insurance:
+1.  **Multi-Scalar Monitoring**: Calculate SPI (Rainfall), SPEI (Water Balance), and SSI (Soil Moisture) at the district level (Admin 2).
+2.  **Integrated Modeling**: Develop the **Agricultural Reanalysis Index (ARI)**—a weighted composite index ($20\% SPEI + 50\% SSI + 30\% TCI$).
+3.  **Validation**: Use ROC (Receiver Operating Characteristic) analysis to test index accuracy against historical disaster years (EM-DAT).
+4.  **Spatial Correlation**: Map teleconnections between districts to help insurers diversify their risk portfolios.
