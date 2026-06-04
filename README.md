@@ -56,7 +56,7 @@ Correlation analysis proves that Land Surface Temperature (LST) has a stronger n
 The ARI achieved an Accuracy (AUC) of 0.798, outperforming the traditional SPI (0.769). This validates the ARI as the most reliable tool for triggering insurance payouts while minimizing Basis Risk.
 ![alt text](output/Consolidated_ROC_Analysis.png)
 
-11. Soil Moisture Lag
+10. Soil Moisture Lag
 The comparison between SSI-3 and SPEI-3 shows that soil moisture often lags atmospheric demand by 1-2 months, providing a critical early warning window for agricultural intervention.
 ![alt text](output/SSI-3_vs_SPEI-3_Soil_lags_atmosphere.png)
 
@@ -67,6 +67,20 @@ The project includes an interactive Folium Multi-Layer Map. This tool allows use
 Language: Python 3.x
 Libraries: geopandas, pandas, scipy (for Gamma/Fisk fitting), matplotlib, seaborn, sklearn (for ROC/AUC), folium.
 Data Structure: Requires a master_df.csv containing columns for precip_mm, pet_mm, soil_7_28cm, ndvi, and lst_c.
+## 🛠️ Tech Stack
+
+### Programming & Environment
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Jupyter Notebook](https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white) ![VS Code](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
+
+### Data Science & Statistics
+![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white) ![SciPy](https://img.shields.io/badge/SciPy-%230C55A5.svg?style=for-the-badge&logo=scipy&logoColor=white) ![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
+
+### Geospatial & Mapping
+![GeoPandas](https://img.shields.io/badge/GeoPandas-%23139C5A.svg?style=for-the-badge&logo=geopandas&logoColor=white) ![Folium](https://img.shields.io/badge/Folium-77B029?style=for-the-badge&logo=leaflet&logoColor=white)
+
+### Visualization
+![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black) ![Seaborn](https://img.shields.io/badge/Seaborn-444876?style=for-the-badge&logo=python&logoColor=white) ![Plotly](https://img.shields.io/badge/Plotly-%233F4F75.svg?style=for-the-badge&logo=plotly&logoColor=white)
+
 
 📚 References
 Vicente-Serrano et al. (2010): SPEI Methodology.
