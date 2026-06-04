@@ -61,8 +61,7 @@ The comparison between SSI-3 and SPEI-3 shows that soil moisture often lags atmo
 ![alt text](output/SSI-3_vs_SPEI-3_Soil_lags_atmosphere.png)
 
 🖥️ Interactive Analysis
-The project includes an interactive Folium Multi-Layer Map. This tool allows users to toggle between different indices (ARI, SPI, SSI, VHI) to see how they performed spatially during major disaster years like the 2015 El Niño.
-🔗 View Interactive Ethiopia Drought Map ![alt text](output/Ethiopia_Drought_MultiLayer_2015_10.html) (HTML) (Download and open in browser)
+The project includes an interactive Folium Multi-Layer Map. This tool allows users to toggle between different indices (ARI, SPI, SSI, VHI) to see how they performed spatially during major disaster years like the 2015 El Niño. (HTML) (Download and open in browser)
 
 🚀 Technical Requirements
 Language: Python 3.x
