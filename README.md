@@ -38,27 +38,27 @@ ARI (Final): Rolling3M(0.2×SPEI+0.5×SSI_Root+0.3×TCI_Z).
 📈 Visual Outputs & Results
 1. Rainfall Seasonality
 The analysis confirms a "unimodal" rainfall pattern, justifying the study's focus on the June-September window for national food security.
-![alt text](outputs/Ethiopia_Monthly_Rainfall_Climatology.png)
+![alt text](output/Ethiopia_Monthly_Rainfall_Climatology.png)
 
 3. Historical Drought Matrix
 The SPI-3 heatmap highlights systemic drought years (2002, 2009, 2015) where nearly all districts simultaneously experienced severe rainfall deficits.
-![alt text](outputs/Ethiopia_Historical_Temporal_Drought_Matrix_September.png)
+![alt text](output/Ethiopia_Historical_Temporal_Drought_Matrix_September.png)
 
 5. Climatic Water Balance (The "Scissors" Plot)
 In districts like Agew Awi, atmospheric demand (PET) exceeds water supply for approximately nine months of the year, leaving a narrow window for crop growth.
-![alt text](outputs/Climatic_Water_Balance_Agew_Awi.png)
+![alt text](output/Climatic_Water_Balance_Agew_Awi.png)
 
 7. Thermal Stress Correlation
 Correlation analysis proves that Land Surface Temperature (LST) has a stronger negative impact on plant health (-0.79) than rainfall has a positive impact (0.57).
-![alt text](outputs/Inter_Variable_Correlation_(Validating_Thermal_&_Vegetation_Links).png)
+![alt text](output/Inter_Variable_Correlation_(Validating_Thermal_&_Vegetation_Links).png)
 
 9. Model Validation (ROC Analysis)
 The ARI achieved an Accuracy (AUC) of 0.798, outperforming the traditional SPI (0.769). This validates the ARI as the most reliable tool for triggering insurance payouts while minimizing Basis Risk.
-![alt text](outputs/Consolidated_ROC_Analysis.png)
+![alt text](output/Consolidated_ROC_Analysis.png)
 
 11. Soil Moisture Lag
 The comparison between SSI-3 and SPEI-3 shows that soil moisture often lags atmospheric demand by 1-2 months, providing a critical early warning window for agricultural intervention.
-![alt text](outputs/SSI-3_vs_SPEI-3_Soil_lags_atmosphere.png)
+![alt text](output/SSI-3_vs_SPEI-3_Soil_lags_atmosphere.png)
 
 🖥️ Interactive Analysis
 The project includes an interactive Folium Multi-Layer Map. This tool allows users to toggle between different indices (ARI, SPI, SSI, VHI) to see how they performed spatially during major disaster years like the 2015 El Niño.
